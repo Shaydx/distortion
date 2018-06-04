@@ -52,7 +52,7 @@ let meter_value = semi_cf - ((queue * semi_cf) / 25);
 mask.setAttribute("stroke-dasharray", meter_value + "," + cf);
 meter_needle.style.transform = "rotate(" + 
     (270 + ((queue * 180) / 25)) + "deg)";
-    lbl.textContent = "People in queue for ice cold beer: " + queue;
+    lbl.textContent = queue + " People in queue for an ice cold beer";
     bartender.textContent = "Bartenders serving the beer: " + staff.join(' & ');
 }
 //slider.addEventListener("input", range_change_event);
